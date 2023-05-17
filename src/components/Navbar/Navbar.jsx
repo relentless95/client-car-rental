@@ -1,11 +1,12 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import "./Navbar.scss";
 
 function Navbar() {
   return (
     <>
-      <div className="">
-        <div>
+      <div className="navbar">
+        <div className="navbar__img">
           <Link to="/">
             <img
               src={"/images/logo/png/logo-no-background.png"}
@@ -14,7 +15,7 @@ function Navbar() {
           </Link>
         </div>
 
-        <ul className="navbar__lins">
+        <ul className="navbar__links">
           <NavLink
             to="/"
             className={({ isActive }) => (isActive ? "home-link" : "")}
@@ -46,7 +47,7 @@ function Navbar() {
             Our Team
           </NavLink>
           <NavLink
-            to=""
+            to="/contact"
             className={({ isActive }) => (isActive ? "contact-link" : "")}
           >
             Contact
@@ -54,19 +55,17 @@ function Navbar() {
         </ul>
 
         <div className="navbar__btns">
-          <NavLink
-            to="/login"
-            className={({ isActive }) => (isActive ? "login-link" : "")}
-          >
+          <Link to="/login" className="navbar__btns__login-link">
             Log in
-          </NavLink>
+          </Link>
           |
-          <NavLink
+          <Link
             to="/signup"
-            className={({ isActive }) => (isActive ? "signup-link" : "")}
+           
+            className="navbar__btns__signup-link"
           >
             Sign up
-          </NavLink>
+          </Link>
         </div>
       </div>
     </>

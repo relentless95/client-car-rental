@@ -1,0 +1,96 @@
+@import "../../sassStyles/abstracts/variables";
+// @import "../../sassStyles/base/base";
+
+.navbar {
+  max-width: 133rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid $color-purple-light; 
+  padding: 2.7rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 9999;
+  margin: 0 auto;
+
+  &__img {
+    width: 14.5rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__links {
+    display: flex;
+    list-style: none;
+    gap: 2.1rem;
+
+    a {
+      font-size: $default-font-size;
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      color: $color-black; 
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s;
+
+
+      &:hover {
+        color: $color-purple-light;
+      }
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: 0.5rem;
+    font-size: $default-font-size; 
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    align-items: center;
+    font-weight: 900;
+  }
+
+  &__btns__login-link {
+    color: $color-white; 
+    background-color: $color-purple-light;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 10px 15px 0 rgb(95 81 252 / 35%);
+    padding: 1.5rem 3rem;
+    transition: all 0.3s;
+
+    &:hover {
+      // color: red;
+    }
+  }
+  &__btns__signup-link {
+    background-color: $color-black;
+    color: white;
+    padding: 1.5rem 3rem;
+    border-radius: 3px;
+    box-shadow: 0 10px 15px 0 rgb(26 0 0 / 35%);
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+}
+
+.home,
+.about,
+.models,
+.testimonial,
+.team,
+.contact {
+  &-link {
+    border-bottom: 0.5rem solid $color-purple-light;
+    padding-bottom: 0.3rem;
+  }
+}
+
