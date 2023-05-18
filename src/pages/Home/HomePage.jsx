@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Hero from "../../components/Hero/Hero";
+// import "./Home.scss"
 
 function HomePage() {
   return (
-    <div>HomePage</div>
-  )
+    <>
+      <Hero />
+    </>
+  );
 }
 
-export default HomePage
+export default HomePage;

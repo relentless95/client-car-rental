@@ -1,3 +1,5 @@
+@import "../abstracts/variables";
+
 /* basic reset.. to make a cross browser reset */
 *,
 *::after,
@@ -17,4 +19,14 @@ html {
 body {
   /* to force inheritance */
   box-sizing: border-box;
+  //   font-family: "Lato", sans-serif;
+  //   font-weight: 400;
+  //   color: $color-black;
+}
+
+.container {
+  max-width: 133rem !important;
+  margin: 0 auto !important;
+  padding: 0 2.5rem !important;
+  border: 3px solid red;
 }

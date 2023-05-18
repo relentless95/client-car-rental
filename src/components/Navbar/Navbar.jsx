@@ -5,7 +5,7 @@ import "./Navbar.scss";
 function Navbar() {
   return (
     <>
-      <div className="navbar">
+      <nav className="navbar">
         <div className="navbar__img">
           <Link to="/">
             <img
@@ -67,7 +67,7 @@ function Navbar() {
             Sign up
           </Link>
         </div>
-      </div>
+      </nav>
     </>
   );
 }
