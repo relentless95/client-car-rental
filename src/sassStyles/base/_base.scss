@@ -19,6 +19,8 @@ html {
 body {
   /* to force inheritance */
   box-sizing: border-box;
+  background-color: #fff;
+
   //   font-family: "Lato", sans-serif;
   //   font-weight: 400;
   //   color: $color-black;
@@ -27,6 +29,7 @@ body {
 .container {
   max-width: 133rem !important;
   margin: 0 auto !important;
+  padding: 0 !important;
   padding: 0 2.5rem !important;
   border: 3px solid red;
 }

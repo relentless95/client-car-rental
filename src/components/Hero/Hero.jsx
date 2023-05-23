@@ -22,7 +22,7 @@ function Hero() {
                 Deals on Car Rentals.
               </h1>
               <p>
-                Rent the car of your dreams. Unbeatable prices, unlimited miles,
+                Rent the car of your dreams. best prices, unlimited miles,
                 flexible pick-up options and more.
               </p>
               <div className="hero-content__text__btns">
