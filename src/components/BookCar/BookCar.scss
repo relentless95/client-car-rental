@@ -1,0 +1,202 @@
+@import "../../sassStyles/abstracts/variables";
+// @import "../../sassStyles/abstracts/";
+
+.book-section {
+  position: relative;
+
+  background: linear-gradient(to bottom, $bg-gray 20%, $bg-white 80%);
+}
+.book-content {
+  margin: 0 auto;
+  margin-bottom: 10rem;
+
+  &__box {
+    background-color: $bg-white;
+    width: 100%;
+    padding: 4rem 4.5rem 5rem 5.5rem;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 /10%);
+    // height: auto;
+    // position: relative;
+    z-index: 4;
+    color: white;
+    border-radius: 5px;
+    // background-image:
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: $color-text-black;
+
+    h2 {
+      font-size: $h3-size;
+      font-weight: 700;
+      margin-bottom: 2.7rem;
+    }
+
+    .box-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 2rem;
+
+      b {
+        color: $color-purple-light;
+      }
+
+      &__car-type {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font-size: $p-size;
+          font-weight: 600;
+          margin-bottom: 1.2rem;
+
+          .icon-color {
+            color: $color-purple-light;
+          }
+        }
+        select {
+          font-size: 1.5rem;
+          color: #ababab;
+          font-family: $text-font;
+          border: 1px solid #ccd7e6;
+          border-radius: 3px;
+          font-weight: 400;
+          padding: 1.2rem 1.3rem;
+          outline: none;
+        }
+      }
+
+      &__car-time {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        input {
+          outline: none;
+          color: #878585;
+          padding-right: 3rem;
+          border: 1px solid #ccd7e6;
+        }
+
+        label {
+          font-size: $p-size;
+          font-weight: 600;
+          margin-bottom: 1.2rem;
+
+          .icon-color {
+            color: $color-purple-light;
+          }
+        }
+
+        ::-webkit-datetime-edit {
+          padding: 1.3rem 1.3rem;
+        }
+
+        ::-webkit-calendar-picker-indicator {
+          cursor: pointer;
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    button {
+      padding: 1.3rem 1.3rem;
+      height: fit-content;
+      align-self: flex-end;
+      border: none;
+      font-family: $text-font;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: white;
+      background-color: $color-purple-light;
+      box-shadow: 0 10px 15px rgb(95 81 252 / 35%);
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        box-shadow: 0 10px 15px rgb(95 81 252 / 65%);
+      }
+    }
+  }
+}
+
+.error-message {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1.8 rem;
+  margin-top: -1rem;
+  border: 1px solid transparent;
+  border-radius: 0.8rem;
+  font-size: $p-size;
+  font-weight: 500;
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+
+  i {
+    cursor: pointer;
+  }
+}
+
+.booking-done {
+  color: #2a6817;
+  background-color: #c3fabe;
+  border-color: #f5c6cb;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1.8rem;
+  margin-top: -1rem;
+  border: 1px solid transparent;
+  border-radius: 0.8rem;
+  font-size: $p-size;
+  font-weight: 500;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+
+  .icon-color {
+    cursor: pointer;
+  }
+}
+
+// modal & overlay
+
+.active-modal {
+  opacity: 1 !important;
+  display: flex !important;
+}
+
+.modal-overlay {
+  opacity: 0;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999999999;
+  top: 0;
+  right: 0;
+}
+
+.booking-modal {
+  opacity: 0;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  overflow-y: scroll;
+  z-index: 99999999999;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 83rem;
+  height: 100vh;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255);
+  padding-right: 2px;
+  color: $color-text-black
+}

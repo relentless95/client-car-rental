@@ -4,13 +4,16 @@ $color-gray-dark: #777;
 
 $color-orangered: orangered;
 
-
 $color-purple-light: #5f51fc;
 
 $color-white: #fff;
 $color-black: #000;
 
+// text color
 $color-text-black: #000;
+$color-text-gray: #706f7b;
+$color-text-purple: #5f51fc;
+$titles-font: "Rubik", sans-serif;
 
 //FONT
 $default-font-size: 1.6rem;
@@ -25,6 +28,6 @@ $h4-size: 2.2rem;
 $p-size: 1.6rem;
 $input-size: 1.4rem;
 
-
-
-
+//background colors
+$bg-gray: #f8f8f8;
+$bg-white: #ffffff;
