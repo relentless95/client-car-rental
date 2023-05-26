@@ -175,6 +175,7 @@ function BookCar() {
                 Check your email to confirm an order.
                 <MdOutlineClose onClick={hideMessage} />
               </p>
+              {/* add the post request here */}
               <form action="" className="box-form">
                 <div className="box-form__car-type">
                   <label>
@@ -259,33 +260,32 @@ function BookCar() {
       </section>
       {/* modal */}
       <div className={`booking-modal ${modal ? "active-modal" : ""}`}>
-        <div className="booking-modal_title">
+        <div className="booking-modal__title">
           <h2>Complete Reservation</h2>
-          <MdOutlineClose onClick={openModal} />
+          <MdOutlineClose className="icon-color" onClick={openModal} />
         </div>
         {/* message */}
         <div className="booking-modal__message">
           <h4>
-            <MdInfoOutline /> Upon completing this reservation enquiry, you will
-            receive:
+            <MdInfoOutline className="icon-color" /> Upon completing this
+            reservation enquiry, you will receive:
           </h4>
           <p>
-            Your rental voucher to present on arrival a the rental desk and a
+            Your rental voucher to present on arrival at the rental desk and a
             toll-free customer support number.
           </p>
         </div>
         {/* car info */}
         <div className="booking-modal__car-info">
           <div className="dates-div">
-            <div className="booking-modal__car-info__da">
+            <div className="booking-modal__car-info__dates">
               <h5>Location & Date</h5>
               <span>
-                <MdLocationPin />
+                <MdLocationPin className="icon-color" />
                 <div>
                   <h6> Pick-Up Date & Time</h6>
                   <p>
-                    {pickTime}
-                    <input type="text" className="input-time" />
+                    {pickTime} / <input type="time" className="input-time" />
                   </p>
                 </div>
               </span>
@@ -293,12 +293,11 @@ function BookCar() {
 
             <div className="booking-modal__car-info__dates">
               <span>
-                <MdLocationPin />
+                <MdLocationPin className="icon-color" />
                 <div>
                   <h6>Drop-off Date & Time</h6>
                   <p>
-                    {dropTime}
-                    <input type="text" className="input-time" />
+                    {dropTime} / <input type="time" className="input-time" />
                   </p>
                 </div>
               </span>
@@ -306,7 +305,7 @@ function BookCar() {
 
             <div className="booking-modal__car-info__dates">
               <span>
-                <MdCalendarMonth />
+                <MdCalendarMonth className="icon-color" />
                 <div>
                   <h6>Pick-Up Location</h6>
                   <p>{pickUp}</p>
@@ -316,7 +315,7 @@ function BookCar() {
 
             <div className="booking-modal__car-info__dates">
               <span>
-                <MdCalendarMonth />
+                <MdCalendarMonth className="icon-color" />
                 <div>
                   <h6>Drop-Off Location</h6>
                   <p>{dropOff}</p>
@@ -336,6 +335,8 @@ function BookCar() {
         {/* personal info */}
         <div className="booking-modal__person-info">
           <h4>Personal Information</h4>
+
+          {/* add the post request here */}
           <form className="info-form">
             <div className="info-form__2col">
               <span>
@@ -362,14 +363,14 @@ function BookCar() {
               </span>
               <span>
                 <label>
-                  phoneNumber
+                  Phone Number
                   <b>*</b>
                 </label>
                 <input
                   value={phone}
                   onChange={handlePhone}
                   type="tel"
-                  placeholder="enter your phone number"
+                  placeholder="Enter your phone number"
                 />
                 <p className="error-m">This field is required.</p>
               </span>
@@ -392,7 +393,6 @@ function BookCar() {
                 <label>
                   Email <b>*</b>
                 </label>
-
                 <input
                   value={email}
                   onChange={handleEmail}
@@ -401,19 +401,20 @@ function BookCar() {
                 />
                 <p className="error-modal">This field is required</p>
               </span>
+
+              <span>
+                <label>
+                  Address<b>*</b>
+                </label>
+                <input
+                  value={address}
+                  onChange={handleAddress}
+                  type="text"
+                  placeholder={"Enter your street address"}
+                />
+                <p className="error-modal">This field is required</p>
+              </span>
             </div>
-            <span>
-              <label>
-                Address<b>*</b>
-              </label>
-              <input
-                value={address}
-                onChange={handleAddress}
-                type="text"
-                placeholder={"enter your street address"}
-              />
-              <p className="error-modal">This field is required</p>
-            </span>
             <div className="info-form__2col">
               <span>
                 <label>
@@ -444,7 +445,7 @@ function BookCar() {
 
             <span className="info-form__checkbox">
               <input type="checkbox" />
-              <p>Please send me latest news and updates</p>
+              <p>Please send me the latest news and updates.</p>
             </span>
 
             <div className="reserve-button">
