@@ -9,7 +9,7 @@
 .plan-container {
   display: flex;
   flex-direction: column;
-//   border: 1px solid red;
+  //   border: 1px solid red;
 
   &__title {
     margin: 0 auto;
@@ -19,7 +19,7 @@
     h3 {
       font-size: $h3-size;
       font-family: $text-font;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     h2 {
@@ -36,15 +36,29 @@
     grid-template-rows: auto;
     margin-top: 3.7rem;
     padding: 0 3rem;
+    align-items: center;
+    justify-content: center;
 
     &__box {
       text-align: center;
       padding: 1rem 6rem;
+      margin: auto auto;
     //   border: 1px solid red;
 
-      img {
-        width: 17rem;
-        height: auto;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+           max-width: 200rem; //44rem
+
+          width: 20rem;
+        //   height: 100%;
+          // height:100%; //auto;
+          object-fit: contain;
+        //   border: 1px solid red;
+        }
       }
 
       h3 {

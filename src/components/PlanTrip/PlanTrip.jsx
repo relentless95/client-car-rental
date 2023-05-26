@@ -1,5 +1,8 @@
 import React from "react";
 import "./PlanTrip.scss";
+import car from "../../../public/images/icons_plantrip/car.png";
+import drive from "../../../public/images/icons_plantrip/drive.png";
+import operator from "../../../public/images/icons_plantrip/operator.png";
 
 function PlanTrip() {
   return (
@@ -15,7 +18,10 @@ function PlanTrip() {
             <div className="plan-container__boxes">
               <div className="plan-container__boxes__box">
                 {/* add data inside src */}
-                <img src={"#"} alt={"icon_img"} />
+                <div>
+                  <img src={car} alt={"icon_img"} />
+                </div>
+
                 <h3>Select Car</h3>
                 <p>
                   We offer a big range of vehicles for all your driving needs.
@@ -25,8 +31,9 @@ function PlanTrip() {
 
               <div className="plan-container__boxes__box">
                 {/* add data inside src */}
-
-                <img src={"#"} alt="icon_img" />
+                <div>
+                  <img src={operator} alt="icon_img" />
+                </div>
                 <h3>Contact Operator</h3>
                 <p>
                   Our knowledgeable and friendly operators are always ready to
@@ -36,8 +43,10 @@ function PlanTrip() {
 
               <div className="plan-container__boxes__box">
                 {/* add data inside src */}
+                <div>
+                  <img src={drive} alt="" />
+                </div>
 
-                <img src={"#"} alt="" />
                 <h3>Let's Drive</h3>
                 <p>
                   Whether you are hitting the open road, we have got you covered

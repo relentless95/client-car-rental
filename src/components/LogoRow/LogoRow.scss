@@ -1,0 +1,36 @@
+@import "../../sassStyles/abstracts/variables";
+
+.logo-row-section {
+  background-color: $bg-white;
+  padding: 1rem 0;
+  //   position: relative;
+
+  .logo-rows {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    div {
+      // padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 9rem;
+      height: 9rem;
+    //   border: 3px solid red;
+      .logo-icon {
+        width: 100%;
+        height: 100%;
+        color: $color-gray-dark;
+        opacity: 0.4;
+      }
+
+      //     img{
+      //     width: 100px;
+      //     height: 100px;
+      //     object-fit: contain;
+      // }
+    }
+  }
+}
