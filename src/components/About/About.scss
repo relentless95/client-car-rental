@@ -1,24 +1,81 @@
 @import "../../sassStyles/abstracts/variables";
 
 .about-section {
-  position: relative;
+  // position: relative;
+  // height: 60vh;
+  // border: 5px solid blue;
+  margin-bottom: 5rem;
 
   .about-main {
-    margin: 10rem auto;
+    margin: 1rem auto;
+
     display: flex;
-    gap: 5rem;
-    max-width: 90rem;
+    gap: 1rem;
+    // max-width: 100rem;
+    height: 100%;
     align-items: center;
+    // border: 6px solid olivedrab;
 
     &__img {
-      //   width: 43rem;
-      //   height: 43rem;
-      width: 43rem;
-      border: 6px solid rgb(231, 125, 169);
+      width: 140rem;
+      height: 43rem;
+      // width: 100%;
+      // height: 100%;
+      // border: 6px solid rgb(231, 125, 169);
       img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
+      }
+    }
+    &__text {
+      color: $color-black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0rem;
+      // border: 6px solid rgb(231, 125, 169);
+      width: 100rem;
+      height: 43rem;
+
+      h3{
+        font-family: $text-font;
+        font-size: $h3-size;
+        color: $color-purple-light
+      }
+
+      h2 {
+        font-family: $titles-font;
+        font-size: $h2-size;
+        line-height: 1.2;
+        // font-weight: 600;
+      }
+
+      p {
+        font-family: $text-font;
+        font-size: $p-size;
+        color: $color-text-gray;
+        line-height: 2.5rem;
+        // margin-top: 4rem;
+        // margin-bottom: 7rem;
+      }
+      &-button {
+        padding: 1.3rem 1.3rem;
+        height: fit-content;
+        align-self: flex-start;
+        border: none;
+        font-family: $text-font;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: white;
+        background-color: $color-purple-light;
+        box-shadow: 0 10px 15px rgb(95 81 252 / 35%);
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          box-shadow: 0 10px 15px rgb(95 81 252 / 65%);
+        }
       }
     }
   }
