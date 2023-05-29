@@ -2,12 +2,13 @@ import React, { useState } from "react";
 
 function CarContainer({ data, carID }) {
   const [carLoad, setCarLoad] = useState(true);
+  console.log("carID ------>", carID)
 
   return (
     <>
       {data[carID].map((car, id) => {
         return (
-          <>
+          
             <div key={id} className="box-cars">
               {/* car */}
               <div className="select-car">
@@ -29,7 +30,7 @@ function CarContainer({ data, carID }) {
                     <span>{car.model}</span>
                   </div>
 
-                  <div className="select description__table__col">
+                  <div className="select-description__table__col">
                     <span>make</span>
                     <span>{car.make}</span>
                   </div>
@@ -56,7 +57,7 @@ function CarContainer({ data, carID }) {
 
                   <div className="select-description__table__col">
                     <span>Transmission</span>
-                    <span>{car.air}</span>
+                    <span>{car.transmission}</span>
                   </div>
 
                   <div className="select-description__table__col">
@@ -70,7 +71,7 @@ function CarContainer({ data, carID }) {
                 </a>
               </div>
             </div>
-          </>
+          
         );
       })}
     </>
