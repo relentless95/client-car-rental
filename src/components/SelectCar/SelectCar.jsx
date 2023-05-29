@@ -18,9 +18,9 @@ function SelectCar() {
   return (
     <>
       <section className="select-section">
-        <div className="contain">
+        <div className="container">
           <div className="select-container">
-            <div className="select-container_title">
+            <div className="select-container__title">
               <h3>Vehicle Models</h3>
               <h2>Our rental fleet</h2>
               <p>

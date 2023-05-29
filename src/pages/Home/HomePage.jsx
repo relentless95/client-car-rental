@@ -4,6 +4,7 @@ import BookCar from "../../components/BookCar/BookCar";
 import PlanTrip from "../../components/PlanTrip/PlanTrip";
 import LogoRow from "../../components/LogoRow/LogoRow";
 import About from "../../components/About/About";
+import SelectCar from "../../components/SelectCar/SelectCar";
 // import "./Home.scss"
 
 function HomePage() {
@@ -15,6 +16,7 @@ function HomePage() {
       <LogoRow />
       <PlanTrip />
       <About />
+      <SelectCar />
     </>
   );
 }

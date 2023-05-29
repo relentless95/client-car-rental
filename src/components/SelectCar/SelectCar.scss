@@ -1,1 +1,72 @@
-@import "../../sassStyles/abstracts/variables";
+@import "../../sassStyles/abstracts//variables";
+
+.select-section {
+  padding: 10rem 0;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: o auto;
+    text-align: center;
+    color: $color-text-black;
+    max-width: 50rem;
+    margin-bottom: 5rem;
+
+    p {
+      font-size: $p-size;
+      font-family: $text-font;
+      color: $color-text-gray;
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: $h3-size;
+      font-family: $text-font;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: $h2-size;
+      font-family: $titles-font;
+      margin: 0.5rem 0 1rem 0;
+    }
+  }
+
+  &__car-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .select-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+    button {
+      font-size: 2rem;
+      font-family: $titles-font;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      padding: 1.5rem 2.5rem;
+      background-color: #e9e9e9;
+      color: $color-text-black;
+      transition: all 0.2s;
+      text-align: left;
+
+      &:hover {
+        background-color: $color-purple-light;
+        color: white;
+      }
+    }
+  }
+
+  .select-car{
+    width:50rem;
+    position: relative;
+  }
+}
