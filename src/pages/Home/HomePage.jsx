@@ -5,6 +5,8 @@ import PlanTrip from "../../components/PlanTrip/PlanTrip";
 import LogoRow from "../../components/LogoRow/LogoRow";
 import About from "../../components/About/About";
 import SelectCar from "../../components/SelectCar/SelectCar";
+import Banner from "../../components/Banner/Banner";
+import Testimonials from "../../components/Testimonials/Testimonials";
 // import "./Home.scss"
 
 function HomePage() {
@@ -17,6 +19,8 @@ function HomePage() {
       <PlanTrip />
       <About />
       <SelectCar />
+      <Banner />
+      <Testimonials />
     </>
   );
 }
