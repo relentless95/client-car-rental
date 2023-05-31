@@ -5,7 +5,7 @@ import joey from "../../../public/images/testimonials/joey.jpg";
 import john from "../../../public/images/testimonials/john.jpg";
 import tyrion from "../../../public/images/testimonials/tyrion.jpg";
 
-const testimonials = [
+export const testimonialData = [
   {
     name: "Harvey Specter",
     position: "lawyer",
@@ -24,14 +24,14 @@ const testimonials = [
   {
     name: "Dr. Gregory House",
     position: "Doctor",
-    img: harvey,
+    img: house,
     stars: 3,
     disc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi saepe exercitationem autem delectus est, corrupti quibusdam error placeat cum quae eveniet possimus.",
   },
   {
     name: "Joey Tribbiani",
     position: "Actor",
-    img: harvey,
+    img: joey,
     stars: 5,
     disc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi saepe exercitationem autem delectus est, corrupti quibusdam error placeat cum quae eveniet possimus.",
   },
@@ -39,14 +39,14 @@ const testimonials = [
   {
     name: "John Snow",
     position: "King in the north",
-    img: harvey,
+    img: john,
     stars: 5,
     disc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi saepe exercitationem autem delectus est, corrupti quibusdam error placeat cum quae eveniet possimus.",
   },
   {
     name: "Tyrion Lannister",
     position: "Hand of the Queen",
-    img: harvey,
+    img: tyrion,
     stars: 4,
     disc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi saepe exercitationem autem delectus est, corrupti quibusdam error placeat cum quae eveniet possimus.",
   },

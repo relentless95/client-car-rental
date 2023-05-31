@@ -6,7 +6,9 @@ import LogoRow from "../../components/LogoRow/LogoRow";
 import About from "../../components/About/About";
 import SelectCar from "../../components/SelectCar/SelectCar";
 import Banner from "../../components/Banner/Banner";
-import Testimonials from "../../components/Testimonials/Testimonials";
+// import Testimonials from "../../components/Testimonials/Testimonials";
+// import TestimonialsNew from "../../components/Testimonials/TestimonialsNew";
+import TestimonialsNew from "../../components/Testimonials/TestimonialsNew";
 // import "./Home.scss"
 
 function HomePage() {
@@ -20,7 +22,8 @@ function HomePage() {
       <About />
       <SelectCar />
       <Banner />
-      <Testimonials />
+      {/* <Testimonials /> */}
+      <TestimonialsNew/>
     </>
   );
 }
