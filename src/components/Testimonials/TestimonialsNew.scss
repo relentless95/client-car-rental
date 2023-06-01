@@ -2,6 +2,86 @@
 
 .testimonials-section {
   background-color: $bg-gray;
-  padding: 10rem 0;
+  padding: 5rem 0;
   color: $color-text-black;
+  width: 100%;
+  max-width: 150rem;
+  margin: 0 auto;
+
+  // @media(max-width: 90rem){
+  //   width:90%
+  // }
+
+  .slick-list,
+  .slick-slider,
+  .slick-track {
+    padding: 0;
+  }
+
+  .slick-dots {
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  .slick-dots li button:before {
+    content: "";
+  }
+
+  .slick-dots li button {
+    width: 1rem;
+    height: 4px;
+    background: linear-gradient(
+      159deg,
+      rgb(45, 45, 48) 0%,
+      rgb(43, 43, 53) 100%
+    );
+    padding: 0.1rem;
+    margin-top: 1rem;
+    transition: all 400ms ease-in-out;
+    border-radius: 50px;
+  }
+
+  .slick-dots li.slick-active button {
+    background: #01be96;
+    width: 15px;
+  }
+
+  .slick-dots li {
+    margin: 0;
+  }
+}
+
+.testimonials-content {
+  // display: flex;
+  // flex-direction: column;
+  margin-top: 2rem;
+  position: relative;
+  // background: blue;
+}
+
+.testimonials-buttons {
+  position: absolute;
+  right: 0.7rem;
+  bottom: 18.7rem;
+  border: 2px solid red;
+
+  button {
+    background-color: transparent;
+    margin-left: 0.5rem;
+    border: none;
+    color: #01be96;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+
+  // @media (max-width: 500px) {
+  //   display: none;
+  // }
+}
+
+.slider-container {
+  background: linear-gradient(150deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+
+  padding: 1.5rem 1rem;
+  margin: 0 1rem;
 }
