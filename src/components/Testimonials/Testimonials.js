@@ -8,7 +8,7 @@ import tyrion from "../../../public/images/testimonials/tyrion.jpg";
 export const testimonialData = [
   {
     name: "Harvey Specter",
-    position: "lawyer",
+    position: "Lawyer",
     img: harvey,
     stars: 4,
     disc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi saepe exercitationem autem delectus est, corrupti quibusdam error placeat cum quae eveniet possimus.",

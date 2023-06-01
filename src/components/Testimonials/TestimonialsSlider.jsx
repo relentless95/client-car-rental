@@ -2,18 +2,16 @@ import { IoIosQuote } from "react-icons/io";
 import { MdStarOutline } from "react-icons/md";
 
 function TestimonialsSlider({ item }) {
-
-
   console.log(item);
-  const {name, position, img, stars, disc} = item
+  const { name, position, img, stars, disc } = item;
 
-  console.log(name, position, img, stars, disc)
+  console.log(name, position, img, stars, disc);
 
   return (
     <>
       <div className="slider-container">
         <div className="slider-header">
-          <span>
+          <span className="slider-header__quote">
             <IoIosQuote />
           </span>
           <div>
@@ -22,22 +20,23 @@ function TestimonialsSlider({ item }) {
               .map((_, index) => {
                 return (
                   <>
-                    <span className="slider-star" key={index}>
+                    <span className="slider-header__star" key={index}>
                       <MdStarOutline />
                     </span>
                   </>
                 );
               })}
           </div>
-          <div className="testimonial-content-text">{disc}</div>
-          <div className="testimonial-content-footer">
+          </div>
+          <div className="slider-content__body">{disc}</div>
+          <div className="slider-content__footer">
             <img src={img} alt={name} />
-            <div className="details">
+            <div className="slider-content__details">
               <h1>{name}</h1>
               <p>{position}</p>
             </div>
           </div>
-        </div>
+        
       </div>
     </>
   );

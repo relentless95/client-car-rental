@@ -117,6 +117,16 @@ function TestimonialsNew() {
   return (
     <section className="testimonials-section">
       <div className="container">
+        <div className="testimonials-content__title">
+          <h4>Reviews</h4>
+          <h2>Clients Testimonials</h2>
+          <p>
+            Discover the positive impact we have made on our Clients reading
+            through their testimonials. our clients have experienced our service
+            and results, and they are eager to share their positive experiences
+            with you.{" "}
+          </p>
+        </div>
         <div className="testimonials-content">
           <Slider ref={arrowRef} {...settings}>
             {testimonialDisc}
