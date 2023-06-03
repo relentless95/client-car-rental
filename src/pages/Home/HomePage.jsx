@@ -9,6 +9,7 @@ import Banner from "../../components/Banner/Banner";
 // import Testimonials from "../../components/Testimonials/Testimonials";
 // import TestimonialsNew from "../../components/Testimonials/TestimonialsNew";
 import TestimonialsNew from "../../components/Testimonials/TestimonialsNew";
+import Faq from "../../components/Faq/Faq";
 // import "./Home.scss"
 
 function HomePage() {
@@ -23,7 +24,8 @@ function HomePage() {
       <SelectCar />
       <Banner />
       {/* <Testimonials /> */}
-      <TestimonialsNew/>
+      <TestimonialsNew />
+      <Faq />
     </>
   );
 }
