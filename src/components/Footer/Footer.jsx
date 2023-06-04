@@ -1,5 +1,7 @@
 import React from "react";
 import { MdLocalPhone } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+import "./Footer.scss";
 
 function Footer() {
   return (
@@ -21,7 +23,10 @@ function Footer() {
             </li>
 
             <li>
-              <a href="mailto:autos@gmail.com ">&nbsp; autos@gmail.com</a>
+              <a href="mailto:autos@gmail.com ">
+                <MdEmail />
+                &nbsp; autos@gmail.com
+              </a>
             </li>
 
             <li>
@@ -39,19 +44,19 @@ function Footer() {
             </li>
 
             <li>
-              <a href="">Careers</a>
+              <a href="#home">Careers</a>
             </li>
 
             <li>
-              <a href="">Mobile</a>
+              <a href="#home">Mobile</a>
             </li>
 
             <li>
-              <a href="">Blog</a>
+              <a href="#home">Blog</a>
             </li>
 
             <li>
-              <a href="">How we work</a>
+              <a href="#home">How we work</a>
             </li>
           </ul>
 
@@ -62,7 +67,7 @@ function Footer() {
             <li>Sun: Closed</li>
           </ul>
 
-          <ul className="footer-coontent__2">
+          <ul className="footer-content__2">
             <li>Subscription</li>
             <li>
               <p>Subscribe your Email address for latest news & updates</p>

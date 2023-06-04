@@ -13,6 +13,7 @@ import About from "./pages/About/About";
 import Navbar from "./components/Navbar/Navbar";
 import SignUp from "./pages/SignUp/SignUp";
 import LogIn from "./pages/Login/LogIn";
+import Footer from "./components/Footer/Footer";
 
 
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<LogIn />} />
       </Routes>
+      <Footer/>
     </>
   );
 }
