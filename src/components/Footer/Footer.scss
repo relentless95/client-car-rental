@@ -1,8 +1,8 @@
 @import "../../sassStyles//abstracts/variables";
 
 footer {
-  background-color: $bg-white;
-  padding: 10rem 0;
+  background-color: $bg-gray;
+  padding: 5rem 0;
 }
 
 .footer-content {
@@ -28,6 +28,10 @@ footer {
           color: $color-purple-light;
         }
       }
+      &:first-child {
+        font-family: $titles-font;
+        text-transform: uppercase;
+      }
 
       &:nth-child(1) {
         font-size: $h3-size;
@@ -50,7 +54,7 @@ footer {
         a {
           display: flex;
           // flex-direction: column;
-        //   background-color: red;
+          //   background-color: red;
           // justify-content: center;
           align-items: center;
           font-size: $p-size;
