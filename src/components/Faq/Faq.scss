@@ -1,11 +1,11 @@
 @import "../../sassStyles/abstracts/variables";
 
 .faq-section {
-  background-image: url("#");
-  padding: 10 rem 0;
+  background-image: url("/public/images/faq/bmw-car.png");
+  padding: 10rem 0;
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: 0 70%;
+  background-position: 0% 70%;
 }
 
 .faq-content {
@@ -87,9 +87,9 @@
   }
 
   .active-answer {
-//     max-height: 20rem;
-    // padding: 2.8rem 4.5rem;
-//     transition: 0.4s ease;
+    max-height: 20rem;
+    padding: 2.8rem 4.5rem;
+    transition: 0.4s ease;
   }
 
   .active-question {
