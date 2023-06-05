@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./SelectCar.scss";
 import { carData } from "./carData";
 import CarContainer from "../CarContainer/CarContainer";
 
 function SelectCar() {
-  const [active, setActive] = useState("FirstCar");
+  const [active, setActive] = useState("Ford Mustang GT");
   const [colorBtn, setColorBtn] = useState("btn1");
 
   const btnID = (id) => {
@@ -31,7 +31,20 @@ function SelectCar() {
             <div className="select-container__car-content">
               {/* {Select car} */}
               <div className="select-box">
-                <button
+                {carData.map((car, index) => (
+                  <button
+                    key={car.name}
+                    className={`${coloringButton(`btn${index}`)}`}
+                    onClick={() => {
+                      setActive(car.name);
+                      btnID(`btn-${index + 1}`);
+                    }}
+                  >
+                    {car.name}
+                    {console.log("looking for this----->", car)}
+                  </button>
+                ))}
+                {/* <button
                   className={`${coloringButton("btn1")}`}
                   onClick={() => {
                     setActive("FirstCar");
@@ -79,24 +92,13 @@ function SelectCar() {
                   }}
                 >
                   VolksWagen Tiguan
-                </button>
+                </button> */}
               </div>
 
-              {active === "FirstCar" && (
-                <CarContainer data={carData} carID={0} />
-              )}
-              {active === "SecondCar" && (
-                <CarContainer data={carData} carID={1} />
-              )}
-              {active === "ThirdCar" && (
-                <CarContainer data={carData} carID={2} />
-              )}
-              {active === "FourthCar" && (
-                <CarContainer data={carData} carID={3} />
-              )}
-              {active === "FifthCar" && (
-                <CarContainer data={carData} carID={4} />
-              )}
+              <CarContainer
+                data={carData.find((car) => car.name === active)}
+                carID={0}
+              />
             </div>
           </div>
         </div>
