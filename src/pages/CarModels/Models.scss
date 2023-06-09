@@ -1,0 +1,18 @@
+@import "../../sassStyles/abstracts/variables";
+
+.models-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 3rem;
+  align-items: center;
+  text-align: center;
+  padding: 10rem 0;
+  width: 110rem;
+  margin: 0 auto;
+
+//   @media (max-width: 1150px) {
+//     grid-template-columns: 1fr 1fr;
+//     width: fit-content;
+//   }
+}

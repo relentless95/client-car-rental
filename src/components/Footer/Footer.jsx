@@ -62,8 +62,8 @@ function Footer() {
 
           <ul className="footer-content__2">
             <li>Working Hours</li>
-            <li>Mon - Fri: 9:00AM - 9:00PM</li>
-            <li>Sat: 9: 00Am-19:00PM</li>
+            <li>Mon - Fri: 9:00 AM - 9:00 PM</li>
+            <li>Sat: 9: 00A M - 19:00 PM</li>
             <li>Sun: Closed</li>
           </ul>
 

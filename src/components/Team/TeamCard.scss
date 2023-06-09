@@ -1,0 +1,37 @@
+@import "../../sassStyles/abstracts/variables";
+
+.team-container__box {
+  width: 33rem;
+  background-color: white;
+  box-shadow: 0 20px 10px 0 rgb(0 0 0 / 8%);
+  margin-bottom: 10px;
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+
+  &__img-div {
+    width: 100%;
+    height: auto;
+    background-color: #f6f6f6;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__descr {
+    color: $color-text-black;
+    padding: 3rem;
+
+    h3 {
+      font-size: $h4-size;
+    }
+
+    p {
+      font-size: $p-size;
+      font-weight: 500;
+      color: #777777;
+    }
+  }
+}

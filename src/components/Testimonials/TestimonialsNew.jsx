@@ -21,7 +21,7 @@ import {
 // import john from "../../../public/images/testimonials/john.jpg";
 // import tyrion from "../../../public/images/testimonials/tyrion.jpg";
 
-console.log(testimonialData);
+// console.log(testimonialData);
 
 let settings = {
   dots: true,
@@ -113,7 +113,7 @@ function TestimonialsNew() {
     <TestimonialsSlider item={item} key={i} />
   ));
 
-  console.log("testimonialDisc------->", testimonialDisc);
+  // console.log("testimonialDisc------->", testimonialDisc);
   return (
     <section className="testimonials-section">
       <div className="container">

@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import BannerPages from "../../components/bannerPages/BannerPages";
+import HeroPages from "../../components/HeroPages/HeroPages";
+import TestimonialsNew from "../../components/Testimonials/TestimonialsNew";
 
 function Testimonials() {
   return (
-    <div>Testimonials</div>
-  )
+    <>
+      <HeroPages name="Testimonials" />
+      <TestimonialsNew />
+      <BannerPages />
+    </>
+  );
 }
 
-export default Testimonials
+export default Testimonials;

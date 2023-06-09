@@ -1,0 +1,85 @@
+@import "../../sassStyles/abstracts/variables";
+
+.about-main {
+  margin: 10rem auto;
+  display: flex;
+  gap: 5rem;
+  max-width: 90rem;
+  align-items: center;
+  //   background-color: blue;
+
+  &__img {
+    object-fit: cover;
+    width: 43rem;
+    height: 43rem;
+  }
+
+  &__text {
+    color: $color-text-black;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-size: $h4-size;
+      font-family: $text-font;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: $h2-size;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: $p-size;
+      color: $color-text-gray;
+      font-family: $text-font;
+      line-height: 1.5;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    &__icons {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem;
+
+      &__box {
+        display: flex;
+        flex-direction: column;
+        // background-color: blue;
+
+        .last-fk {
+          width: 5rem;
+          // border: 2px solid red;
+        }
+
+        img {
+          width: 7rem;
+        }
+
+        span {
+          // padding: 0 1rem;
+          display: flex;
+          // flex-direction: row;
+          // align-self: center;
+          align-items: center;
+          gap: 1rem;
+          justify-content: center;
+          // border: solid;
+
+          h4 {
+            font-size: 4.6rem;
+            // border: 1px solid red;
+          }
+
+          p {
+            //     // font-size: 4.6rem;
+            margin: 0;
+            // border: 1px solid red;
+          }
+        }
+      }
+    }
+  }
+}

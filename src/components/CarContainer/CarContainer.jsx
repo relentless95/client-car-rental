@@ -4,7 +4,7 @@ import { useState } from "react";
 function CarContainer({ data }) {
   const [carLoad, setCarLoad] = useState(true);
   // console.log("carID ------>", carID);
-  console.log("data------->", data);
+  // console.log("data------->", data);
 
   return (
     <>

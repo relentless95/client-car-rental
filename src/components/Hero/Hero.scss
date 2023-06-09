@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  border: 1px solid black;
+  // border: 1px solid black;
 
   &__text {
     display: flex;
@@ -48,7 +48,7 @@
     z-index: 3;
     max-width: 50rem;
     margin-top: 5rem;
-    border: 1px solid black;
+    // border: 1px solid black;
     text-align: left;
 
     h4 {

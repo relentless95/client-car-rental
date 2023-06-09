@@ -2,10 +2,10 @@ import { IoIosQuote } from "react-icons/io";
 import { MdStarOutline } from "react-icons/md";
 
 function TestimonialsSlider({ item }) {
-  console.log(item);
+  // console.log(item);
   const { name, position, img, stars, disc } = item;
 
-  console.log(name, position, img, stars, disc);
+  // console.log(name, position, img, stars, disc);
 
   return (
     <>

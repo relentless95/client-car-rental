@@ -7,7 +7,7 @@ function Faq() {
 
   const openQ = (id) => {
     setActiveQ(activeQ === id ? "" : id);
-    console.log("id------>", id);
+    // console.log("id------>", id);
   };
 
   const getClassAnswer = (id) => {
@@ -15,7 +15,7 @@ function Faq() {
   };
 
   const getClassQuestion = (id) => {
-    console.log("click on active");
+    // console.log("click on active");
     return activeQ === id ? "active-question" : "";
   };
 
