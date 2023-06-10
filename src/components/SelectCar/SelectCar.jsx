@@ -44,55 +44,6 @@ function SelectCar() {
                     {console.log("looking for this----->", car)}
                   </button>
                 ))}
-                {/* <button
-                  className={`${coloringButton("btn1")}`}
-                  onClick={() => {
-                    setActive("FirstCar");
-                    btnID("btn1");
-                  }}
-                >
-                  Ford Mustang
-                </button>
-
-                <button
-                  className={`${coloringButton("btn2")}`}
-                  onClick={() => {
-                    setActive("SecondCar");
-                    btnID("btn2");
-                  }}
-                >
-                  Honda Accord
-                </button>
-
-                <button
-                  className={`${coloringButton("btn3")}`}
-                  onClick={() => {
-                    setActive("ThirdCar");
-                    btnID("btn3");
-                  }}
-                >
-                  Toyota Corolla
-                </button>
-
-                <button
-                  className={`${coloringButton("btn4")}`}
-                  onClick={() => {
-                    setActive("FourthCar");
-                    btnID("btn4");
-                  }}
-                >
-                  VolksWagen Golf
-                </button>
-
-                <button
-                  className={`${coloringButton("btn5")}`}
-                  onClick={() => {
-                    setActive("FifthCar");
-                    btnID("btn5");
-                  }}
-                >
-                  VolksWagen Tiguan
-                </button> */}
               </div>
 
               <CarContainer

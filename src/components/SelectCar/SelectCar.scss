@@ -31,6 +31,7 @@
     }
 
     h2 {
+      color: $color-white;
       font-size: $h2-size;
       font-family: $titles-font;
       margin: 0.5rem 0 1rem 0;
@@ -71,7 +72,7 @@
     width: 50rem;
     height: 40rem;
     position: relative;
-    border: 2px solid red;
+    // border: 2px solid red;
 
     img {
       width: 100%;
@@ -83,6 +84,7 @@
   .select-description {
     width: 25rem;
     // border: 2px solid red;
+    color: $color-white;
 
     &__price {
       width: 100%;
