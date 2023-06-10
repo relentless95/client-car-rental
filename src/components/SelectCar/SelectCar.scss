@@ -2,6 +2,7 @@
 
 .select-section {
   padding: 10rem 0;
+  background-color: rgb(12, 28, 60);
 }
 
 .select-container {
@@ -25,9 +26,8 @@
     h3 {
       font-size: $h3-size;
       font-family: $text-font;
-    //   font-weight: 700;
-    color: $color-purple-light;
-      
+      //   font-weight: 700;
+      color: $color-purple-light;
     }
 
     h2 {
@@ -69,12 +69,14 @@
 
   .select-car {
     width: 50rem;
+    height: 40rem;
     position: relative;
     border: 2px solid red;
 
     img {
       width: 100%;
       margin-top: 6rem;
+      object-fit: cover;
     }
   }
 
