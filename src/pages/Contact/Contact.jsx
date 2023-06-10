@@ -9,7 +9,7 @@ function Contact() {
       <section className="contact-page">
       <HeroPages name="Contact" />
         <div className="container">
-          {/* <ContactDetails/> */}
+          <ContactDetails/>
 
         </div>
        
