@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-import car from "../../../public/images/about/parked_cars.jpg";
+import car from "../../../public/images/about/parked_cars-2.jpg";
 
 function About() {
   return (
@@ -8,22 +8,23 @@ function About() {
       {/* <div>About</div> */}
       <section className="about-section">
         <div className="container">
-          <div className="about-main">
+          <div className="about-main-first">
             {/* insert parked cars here */}
-            <div className="about-main__img">
+            <div className="about-main-first__img">
               <img src={car} alt="parked cars" />
             </div>
 
-            <div className="about-main__text">
+            <div className="about-main-first__text">
               <h3>About us</h3>
-             
+
               <h2>More than 150+ special collection cars</h2>
               <p>
-                Get the car of your dreams with the installments of your choice.
-                There are various attractive offers through our collaboration
-                with various trusted leasing partners. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero velit aperiam quis vero, illo tempora aut accusantium obcaecati, quasi fuga error autem optio reiciendis, eius tenetur quam saepe tempore quisquam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum,
+                beatae totam id perspiciatis quas, quasi vitae porro voluptatum
+                autem quia quisquam magni maxime dolorem at reiciendis pariatur
+                voluptate amet esse? Perferendis, ab necessitatibus.
               </p>
-              <button className="about-main__text-button">
+              <button className="about-main-first__text-button">
                 See all our cars
               </button>
             </div>
