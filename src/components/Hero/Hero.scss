@@ -1,7 +1,7 @@
 @import "../../sassStyles/abstracts/variables";
 
 .hero-section {
-  background-color: aliceblue;
+  // background-color: aliceblue;
   width: 100%;
   height: 95vh;
   margin: 0;
@@ -10,6 +10,24 @@
   //   background-color: $color-gray-dark;
   position: relative;
   //   border: 10px solid yellow; //<--remove this;
+
+  // trying this:
+  background-image: url(/images/hero/new-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  // transform: scaleX(-1);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.7) 40%,
+    rgba(0, 0, 0, 0.4) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .bg-shape {
@@ -31,7 +49,8 @@
   z-index: 1;
   width: 90vw;
   height: 91vh;
-  //   border: 1px solid black;
+
+  // border: 4px solid red;
 }
 
 .hero-content {
@@ -41,6 +60,8 @@
   align-items: center;
   position: relative;
   // border: 1px solid black;
+  // transform: scaleX(-1);
+  // background-color: blue;
 
   &__text {
     display: flex;
@@ -55,14 +76,14 @@
       font-size: 2rem;
       font-weight: 900;
       font-family: $text-font;
-      color: $color-text-black;
+      color: $color-white;
     }
 
     h1 {
       font-size: $h1-size;
       font-family: $titles-font;
       font-weight: 900;
-      color: $color-text-black;
+      color: $color-white;
       line-height: 1.2;
       margin-top: 1rem;
       margin-bottom: 2.3rem;
@@ -76,7 +97,7 @@
       font-size: $p-size;
       font-family: $text-font;
       line-height: 1.6;
-      color: $color-text-black;
+      color: $color-white;
       margin-bottom: 4rem;
     }
 
@@ -105,7 +126,7 @@
         flex-direction: row;
 
         &:hover {
-          box-shadow: 0 10px 15px 0 rgb(95 81 252 / 35%);
+          box-shadow: 0 10px 15px 0 rgb(95 81 252 / 65%);
           background-color: $color-purple-light;
         }
       }
@@ -122,7 +143,7 @@
         flex-direction: row;
 
         &:hover {
-          background-color: transparent;
+          background-color: $color-white;
           color: $color-text-black;
         }
       }
