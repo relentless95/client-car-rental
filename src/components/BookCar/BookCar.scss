@@ -3,12 +3,14 @@
 
 .book-section {
   position: relative;
-
   background: linear-gradient(to bottom, $bg-gray 20%, $bg-white 80%);
+  
 }
 .book-content {
   margin: 0 auto;
   margin-bottom: 10rem;
+  position: relative;
+  top: -80px;
 
   &__box {
     background-color: $bg-white;
