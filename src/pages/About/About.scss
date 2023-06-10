@@ -1,29 +1,31 @@
 @import "../../sassStyles/abstracts/variables";
 
 .about-main {
-  margin: 10rem auto;
+  margin: 10rem 0;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   gap: 5rem;
-  max-width: 90rem;
-  align-items: center;
-  //   background-color: blue;
+  // max-width: 90rem;
+  // align-items: center;
+  width: 100%;
+  // border:3px solid blue;
 
   &__img {
     object-fit: cover;
-    width: 43rem;
-    height: 43rem;
+    width: 70rem;
+    height: 50rem;
   }
 
   &__text {
     color: $color-text-black;
     display: flex;
     flex-direction: column;
+    padding-right: 3rem;
 
     h3 {
-      font-size: $h4-size;
+      font-size: $h3-size;
       font-family: $text-font;
-      font-weight: 500;
+      color: $color-purple-light;
     }
 
     h2 {

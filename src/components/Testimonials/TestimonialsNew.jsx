@@ -109,8 +109,8 @@ let settings = {
 function TestimonialsNew() {
   const arrowRef = useRef(null);
   let testimonialDisc = "";
-  testimonialDisc = testimonialData.map((item, i) => (
-    <TestimonialsSlider item={item} key={i} />
+  testimonialDisc = testimonialData.map((item, index) => (
+    <TestimonialsSlider item={item} key={index} />
   ));
 
   // console.log("testimonialDisc------->", testimonialDisc);

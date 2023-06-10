@@ -4,7 +4,6 @@ import CarToyotaCor from "/images/car_images/toyota-corolla.png";
 import CarVWGolf from "/images/car_images/volkswagen-golf2.png";
 import CarVWTi from "/images/car_images/volkswagen-tiguan.png";
 
-
 import CarRav4 from "/images/more_cars/2022-toyota-rav4-4dr-suv.jpg";
 import CarRamPickup from "/images/more_cars/2023-ram-1500-crew-cab-pickup.jpg";
 import CarAudiA4 from "/images/more_cars/audi-A4.jpg";
@@ -30,6 +29,7 @@ export const carDetails = [
     transmission: "Automatic",
     fuel: "Gasoline",
     stars: 5,
+    id: 1,
   },
 
   {
@@ -45,6 +45,7 @@ export const carDetails = [
     transmission: "Automatic",
     fuel: "Gasoline",
     stars: 5,
+    id: 2,
   },
 
   {
@@ -60,6 +61,7 @@ export const carDetails = [
     transmission: "Automatic",
     fuel: "Gasoline",
     stars: 5,
+    id: 3,
   },
 
   {
@@ -75,6 +77,7 @@ export const carDetails = [
     transmission: "Automatic",
     fuel: "Gasoline",
     stars: 5,
+    id: 4,
   },
 
   {
@@ -90,6 +93,7 @@ export const carDetails = [
     transmission: "Automatic",
     fuel: "Gasoline",
     stars: 5,
+    id: 5,
   },
 
   {
@@ -105,6 +109,7 @@ export const carDetails = [
     transmission: "Automatic",
     fuel: "Gasoline",
     stars: 5,
+    id: 6,
   },
 
   {
@@ -120,6 +125,7 @@ export const carDetails = [
     transmission: "Automatic",
     fuel: "Gasoline",
     stars: 5,
+    id: 7,
   },
 
   {
@@ -135,6 +141,7 @@ export const carDetails = [
     transmission: "Automatic",
     fuel: "Electric",
     stars: 5,
+    id: 8,
   },
 
   {
@@ -150,6 +157,7 @@ export const carDetails = [
     transmission: "Automatic",
     fuel: "Electric",
     stars: 5,
+    id: 9,
   },
 
   {
@@ -165,6 +173,7 @@ export const carDetails = [
     transmission: "Manual/Automatic",
     fuel: "Hybrid",
     stars: 5,
+    id: 10,
   },
 
   {
@@ -180,6 +189,7 @@ export const carDetails = [
     transmission: "Manual/Automatic",
     fuel: "Gasoline",
     stars: 5,
+    id: 11,
   },
 
   {
@@ -195,6 +205,7 @@ export const carDetails = [
     transmission: "Automatic",
     fuel: "Gasoline",
     stars: 5,
+    id: 12,
   },
 
   {
@@ -210,6 +221,7 @@ export const carDetails = [
     transmission: "Automatic",
     fuel: "Hybrid",
     stars: 5,
+    id: 13,
   },
 
   {
@@ -225,6 +237,7 @@ export const carDetails = [
     transmission: "Automatic",
     fuel: "Hybrid",
     stars: 5,
+    id: 14,
   },
 
   {
@@ -240,5 +253,6 @@ export const carDetails = [
     transmission: "Automatic",
     fuel: "Hybrid",
     stars: 4,
+    id: 15,
   },
 ];

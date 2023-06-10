@@ -2,7 +2,7 @@ import React from "react";
 import BannerPages from "../../components/bannerPages/BannerPages";
 import HeroPages from "../../components/HeroPages/HeroPages";
 import CarCard from "../../components/CarCard/CarCard";
-import "./Models.scss"
+import "./Models.scss";
 
 function Models() {
   return (
