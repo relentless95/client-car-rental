@@ -73,12 +73,7 @@ function About() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Corporis labore eius sed. Aliquid quibusdam voluptatem
                 voluptatibus porro perspiciatis eveniet veritatis,
-                necessitatibus reprehenderit quam, repellat tempore, ratione
-                nihil esse non praesentium. Magnam temporibus quo assumenda eum
-                dolorem quisquam sint dicta placeat doloremque. Ullam expedita
-                facilis, ipsam porro molestias enim! Accusamus culpa distinctio
-                veniam id ratione illo quia perspiciatis molestiae nemo
-                similique.
+                necessitatibus reprehenderit quam, repellat tempore, ratione.
               </p>
              
             </div>
