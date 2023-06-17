@@ -5,6 +5,7 @@ function LogIn() {
     <>
      <div>LogIn</div>
      <form>
+      <input/>
       
      </form>
     </>
