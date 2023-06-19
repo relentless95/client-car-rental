@@ -1,5 +1,4 @@
 // import React from 'react'
-import BannerPages from "../../components/bannerPages/BannerPages";
 import "./Login.scss";
 
 function LogIn() {
@@ -47,7 +46,7 @@ function LogIn() {
           </div>
         </div>
       </section>
-      {/* <BannerPages/> */}
+  
     </>
   );
 }
