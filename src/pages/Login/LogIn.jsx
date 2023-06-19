@@ -11,36 +11,36 @@ function LogIn() {
           <div className="login-container-inner">
             <form action="#" className="login-form">
               <div className="login-form__title">
-                <h2>Log in</h2>
+                <h2>Login</h2>
               </div>
               <div className="login-form_group">
                 <input
                   type="text"
-                  className="form__input"
+                  className="login-form__input"
                   placeholder="Username"
                   id="username"
                   required
                 />
-                <label htmlFor="username" className="form__label">
-                  User name
+                <label htmlFor="username" className="login-form__label">
+                  Username
                 </label>
               </div>
 
               <div className="login-form_group">
                 <input
                   type="text"
-                  className="form__input"
+                  className="login-form__input"
                   placeholder="Password"
                   id="password"
                   required
                 />
-                <label htmlFor="password" className="form__label">
+                <label htmlFor="password" className="login-form__label">
                   Password
                 </label>
               </div>
 
               <div className="login-form-group">
-                <button className="btn">log in</button>
+                <button className="btn">login</button>
               </div>
             </form>
             </div>
