@@ -16,12 +16,12 @@ function LogIn() {
                 <input
                   type="text"
                   className="login-form__input"
-                  placeholder="Username"
-                  id="username"
+                  placeholder="Email"
+                  id="email"
                   required
                 />
                 <label htmlFor="username" className="login-form__label">
-                  Username
+                  email
                 </label>
               </div>
 
