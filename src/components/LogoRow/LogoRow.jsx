@@ -1,17 +1,6 @@
 import React from "react";
 import "./LogoRow.scss";
 
-// import audi from "../../../public/images/logo_row/audi.png";
-// import bmw from "../../../public/images/logo_row/bmw.png";
-// import chevrolet from "../../../public/images/logo_row/chevrolet.png";
-// import ford from "../../../public/images/logo_row/ford.png";
-// import honda from "../../../public/images/logo_row/honda.png";
-// import mercedes from "../../../public/images/logo_row/mercedes.png";
-// import mustang from "../../../public/images/logo_row/mustang.png";
-// import tesla from "../../../public/images/logo_row/tesla.png";
-// import toyota from "../../../public/images/logo_row/toyota.png";
-// import wv from "../../../public/images/logo_row/wv.png";
-
 import { SiAudi } from "react-icons/si";
 import { SiBmw } from "react-icons/si";
 import { SiChevrolet } from "react-icons/si";

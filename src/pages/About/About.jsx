@@ -2,7 +2,7 @@ import React from "react";
 import HeroPages from "../../components/HeroPages/HeroPages";
 import PlanTrip from "../../components/PlanTrip/PlanTrip";
 import { MdLocalPhone } from "react-icons/md";
-import CustomerService from "../../../public/images/about_page/service_customer.jpg";
+import CustomerService from "/images/about_page/service_customer.jpg";
 import "./About.scss";
 import BannerPages from "../../components/bannerPages/BannerPages";
 

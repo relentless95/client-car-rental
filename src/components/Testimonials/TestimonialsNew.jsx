@@ -14,14 +14,6 @@ import {
   MdOutlineArrowCircleRight,
 } from "react-icons/md";
 
-// import harvey from "../../../public/images/testimonials/harvey.jpg";
-// import phoebe from "../../../public/images/testimonials/phoebe.jpg";
-// import house from "../../../public/images/testimonials/house.jpg";
-// import joey from "../../../public/images/testimonials/joey.jpg";
-// import john from "../../../public/images/testimonials/john.jpg";
-// import tyrion from "../../../public/images/testimonials/tyrion.jpg";
-
-// console.log(testimonialData);
 
 let settings = {
   dots: true,

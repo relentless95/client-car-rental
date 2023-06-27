@@ -1,8 +1,8 @@
 import React from "react";
 import "./PlanTrip.scss";
-import car from "../../../public/images/icons_plantrip/car.png";
-import drive from "../../../public/images/icons_plantrip/drive.png";
-import operator from "../../../public/images/icons_plantrip/operator.png";
+import car from "/images/icons_plantrip/car.png";
+import drive from "/images/icons_plantrip/drive.png";
+import operator from "/images/icons_plantrip/operator.png";
 
 function PlanTrip() {
   return (

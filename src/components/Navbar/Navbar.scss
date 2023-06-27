@@ -71,6 +71,7 @@
       // color: red;
     }
   }
+
   &__btns__signup-link {
     background-color: $color-black;
     color: white;
@@ -79,6 +80,35 @@
     box-shadow: 0 10px 15px 0 rgb(26 0 0 / 35%);
     text-decoration: none;
     transition: all 0.3s;
+  }
+
+  &__btns__profile-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    // background-color: $color-black;
+    color: black;
+    // padding: 1.5rem 3rem;
+    // border-radius: 3px;
+    // box-shadow: 0 10px 15px 0 rgb(26 0 0 / 35%);
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  &__btns__logout-link {
+    // background-color: $color-orangered;
+    color: $color-black;
+    // padding: 1.5rem 3rem;
+    // border-radius: 3px;
+    // box-shadow: 0 10px 15px 0 rgb(26 0 0 / 35%);
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover{
+      color: $color-orangered;
+    }
   }
 }
 

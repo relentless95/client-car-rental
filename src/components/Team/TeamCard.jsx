@@ -20,7 +20,7 @@ function TeamCard() {
     "Rental agent",
     "Photographer",
     "Mechanic",
-    "Menager",
+    "Manager",
   ];
 
   useEffect(() => {

@@ -1,11 +1,11 @@
 import "./BookCar.scss";
 import React, { useEffect, useState } from "react";
 
-import CarFordMu from "../../../public/images/car_images/ford-mustang.png";
-import CarHondaAcc from "../../../public/images/car_images/toyota-corolla.png"; //"/images/car_images/honda-accord.png";
-import CarToyotaCor from "../../../public/images/car_images/toyota-corolla.png";
-import CarVWGolf from "../../../public/images/car_images/volkswagen-golf2.png";
-import CarVWTi from "../../../public/images/car_images/volkswagen-tiguan.png";
+import CarFordMu from "/images/car_images/ford-mustang.png";
+import CarHondaAcc from "/images/car_images/toyota-corolla.png"; //"/images/car_images/honda-accord.png";
+import CarToyotaCor from "/images/car_images/toyota-corolla.png";
+import CarVWGolf from "/images/car_images/volkswagen-golf2.png";
+import CarVWTi from "/images/car_images/volkswagen-tiguan.png";
 
 import { IoCarSportSharp } from "react-icons/io5";
 import {

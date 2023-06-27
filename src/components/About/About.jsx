@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-import car from "../../../public/images/about/parked_cars-2.jpg";
+import car from "/images/about/parked_cars-2.jpg";
 
 function About() {
   return (

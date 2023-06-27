@@ -6,11 +6,14 @@ import { BrowserRouter } from "react-router-dom";
 import "./sassStyles/base/_base.scss";
 import "./sassStyles/base/_typography.scss";
 import "./sassStyles/layout/_global.scss";
+import { AuthProviderWrapper } from "./context/auth.context.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <AuthProviderWrapper>
+        <App />
+      </AuthProviderWrapper>
     </BrowserRouter>
   </React.StrictMode>
 );
