@@ -51,7 +51,7 @@ function LogIn() {
                 {errorMessage && (
                   <p className="error-message-universal">{errorMessage}</p>
                 )}
-                <p>Dont have an account?</p>
+                <p>Don't have an account?</p>
                 <button className="btn-black">
                   <Link to={"/signup"}> Sign up</Link>
                 </button>
