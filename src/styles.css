@@ -16,7 +16,7 @@ body {
   /* to force inheritance */
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  overflow:hidden;
+  /* overflow:hidden; */
 
   /*  font-weight: 400;
     color: $color-black; */
