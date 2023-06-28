@@ -13,7 +13,7 @@ import {
 } from "react-icons/md";
 
 function Navbar() {
-  const { isLoggedIn, user } = useContext(AuthContext);
+  const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
   // console.log("isLoggedIn from navbar---->", isLoggedIn)
 
   return (
@@ -96,7 +96,11 @@ function Navbar() {
                 <Link>Help</Link>
               </ul> */}
               |
-              <Link to="/" className="navbar__btns__logout-link">
+              <Link
+                to="#"
+                className="navbar__btns__logout-link"
+                onClick={logOutUser}
+              >
                 logout
               </Link>
             </div>

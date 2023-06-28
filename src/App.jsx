@@ -14,8 +14,7 @@ import Navbar from "./components/Navbar/Navbar";
 import SignUp from "./pages/SignUp/SignUp";
 import LogIn from "./pages/Login/LogIn";
 import Footer from "./components/Footer/Footer";
-
-
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -33,8 +32,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<LogIn />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 }
