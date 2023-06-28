@@ -2,7 +2,7 @@
 
 import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
-// import { useNavigate } from "react-router-dom";
+
 const API_URL = "http://localhost:5005";
 
 const AuthContext = createContext();
@@ -11,7 +11,6 @@ function AuthProviderWrapper(props) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState(null);
-//   const navigate = useNavigate();
 
   const storeToken = (token) => {
     // to get the token from the local storage
@@ -22,7 +21,7 @@ function AuthProviderWrapper(props) {
     // get the token form the local storage
     const storedToken = localStorage.getItem("authToken");
 
-    // if the token exists in the loclStorage
+    // if the token exists in the localStorage
     if (storedToken) {
       // send the JWT token in the request's "Authorization" Headers
       axios
@@ -60,8 +59,6 @@ function AuthProviderWrapper(props) {
     // to log out the user, remove the token
     removeToken();
     authenticateUser();
-    // navigate("/");
-    // console.log("here")
   };
 
   useEffect(() => {
