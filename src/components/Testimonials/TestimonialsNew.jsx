@@ -101,9 +101,10 @@ let settings = {
 function TestimonialsNew() {
   const arrowRef = useRef(null);
   let testimonialDisc = "";
-  testimonialDisc = testimonialData.map((item, index) => (
-    <TestimonialsSlider item={item} key={index} />
-  ));
+  testimonialDisc = testimonialData.map((item, index) => {
+    console.log("index in TesimonialsNew---->", index)
+    return <TestimonialsSlider item={item} key={index} />
+});
 
   // console.log("testimonialDisc------->", testimonialDisc);
   return (

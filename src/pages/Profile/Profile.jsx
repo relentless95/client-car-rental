@@ -1,11 +1,12 @@
 import React from "react";
-import "./Profile.scss"
-
+import "./Profile.scss";
 
 function Profile() {
   return (
     <section>
-      <div className="container">Profile</div>
+      <div className="container">
+        <h1>Profile</h1>
+      </div>
     </section>
   );
 }

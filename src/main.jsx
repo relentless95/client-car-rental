@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./sassStyles/base/_base.scss";
 import "./sassStyles/base/_typography.scss";
 import "./sassStyles/layout/_global.scss";
-import { AuthProviderWrapper } from "./context/auth.context.jsx";
+import AuthProviderWrapper from "./context/AuthContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

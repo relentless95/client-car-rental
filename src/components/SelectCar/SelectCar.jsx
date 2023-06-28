@@ -41,7 +41,7 @@ function SelectCar() {
                     }}
                   >
                     {car.name}
-                    {console.log("looking for this----->", car)}
+                    {/* {console.log("looking for this----->", car)} */}
                   </button>
                 ))}
               </div>

@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Login.scss";
 import { useContext, useState } from "react";
 import axios from "axios";
-import { AuthContext } from "../../context/auth.context";
+import { AuthContext } from "../../context/AuthContext";
 
 function LogIn() {
   const [email, setEmail] = useState("");
@@ -33,10 +33,16 @@ function LogIn() {
       .then((response) => {
         console.log("JWT token", response.data.authToken);
 
-        authenticateUser()
-        navigate("/profile");
-
         storeToken(response.data.authToken);
+
+        authenticateUser().then(() => {
+          console.log("something3");
+          navigate("/profile");
+          console.log("check response.data.authToken---->", response.data);
+        });
+        // navigate("/profile");
+
+        // storeToken(response.data.authToken);
       })
       .catch((error) => {
         const errorDescription = error.response.data.message;

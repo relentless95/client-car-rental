@@ -18,7 +18,9 @@ function TestimonialsSlider({ item }) {
             {Array(stars)
               .fill()
               .map((_, index) => {
+                console.log("index form slider--->", index)
                 return (
+                  
                   <>
                     <span className="slider-header__star" key={index}>
                       <MdStarOutline />
