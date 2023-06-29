@@ -30,44 +30,8 @@ function Navbar() {
           </Link>
         </div>
 
-        {/* to be deleted start */}
 
-        {isLoggedIn ? (
-          <div className="navbar__btns">
-            <Link to="/profile" className="navbar__btns__profile-link">
-              <MdOutlineAccountCircle />
-              {user && user.username}
-            </Link>
-            {/* <ul className="#">
-                <Link>Manage Bookings</Link>
-                <Link>Personal information</Link>
-                <Link>Booking profiles</Link>
-                <Link>Help</Link>
-              </ul> */}
-            |
-            <Link
-              to="/"
-              className="navbar__btns__logout-link"
-              onClick={logOutUser}
-            >
-              logout
-            </Link>
-          </div>
-        ) : (
-          <div className="navbar__btns">
-            <Link to="/login" className="navbar__btns__login-link">
-              Log in
-            </Link>
-            |
-            <Link to="/signup" className="navbar__btns__signup-link">
-              Sign up
-            </Link>
-          </div>
-        )}
-
-        {/* to be deleted end */}
-
-        {/* {isLoggedIn && (
+        {isLoggedIn && (
           <>
             <div className="navbar__btns">
               <Link to="/profile" className="navbar__btns__profile-link">
@@ -136,7 +100,7 @@ function Navbar() {
             </ul>
             <div className="navbar__btns">
               <Link to="/login" className="navbar__btns__login-link">
-                Log in
+                Login
               </Link>
               |
               <Link to="/signup" className="navbar__btns__signup-link">
@@ -144,7 +108,7 @@ function Navbar() {
               </Link>
             </div>
           </>
-        )} */}
+        )}
       </nav>
     </>
   );

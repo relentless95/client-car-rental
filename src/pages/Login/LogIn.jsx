@@ -71,7 +71,7 @@ function LogIn() {
                   required
                 />
                 <label htmlFor="email" className="login-form__label">
-                  email
+                  Email
                 </label>
               </div>
 
