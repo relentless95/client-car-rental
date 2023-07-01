@@ -56,6 +56,7 @@ function LogIn() {
         {/* <div className="container"> */}
         <div className="login-container">
           <div className="login-container-inner">
+            <div>
             <form onSubmit={handleLoginSubmit} className="login-form">
               <div className="login-form__title">
                 <h2>Login</h2>
@@ -96,6 +97,7 @@ function LogIn() {
                 </button>
               </div>
             </form>
+
             <div className="login-form_login-link">
               {errorMessage && (
                 <p className="error-message-universal">{errorMessage}</p>
@@ -104,6 +106,7 @@ function LogIn() {
               <button className="btn-black">
                 <Link to={"/signup"}> Sign up</Link>
               </button>
+            </div>
             </div>
           </div>
         </div>
